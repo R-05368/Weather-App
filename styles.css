@@ -1,0 +1,171 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for transparency */
+    background-image: url('https://th.bing.com/th/id/OIP.f5wSAhFDuGzhqnN90NNGjQHaEC?pid=ImgDet&rs=1'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4); /* Adjust the alpha value for transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling for the search input and button */
+.search {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid #007BFF; /* Add a border outline */
+}
+
+button {
+    padding: 6px 12px;
+    background-color: rgba(0, 123, 255, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 9px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the unit toggle dropdown */
+.unit-select {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+}
+
+select {
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Styling for the weather info */
+.weather-info {
+    font-size: 24px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7); /* Add a background color */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Add some top margin for separation */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+}
+
+/* Styling for location name and weather description */
+.location-name {
+    font-size: 28px; /* Larger font size for location name */
+    color: #007BFF; /* Change color to a more vibrant blue */
+}
+
+.weather-description {
+    font-size: 18px; /* Smaller font size for weather description */
+    color: #555;
+}
+
+/* Styling for temperature, humidity, and wind speed */
+.temperature,
+.humidity,
+.wind-speed {
+    font-size: 22px; /* Font size for weather data */
+    color: #333;
+    margin-bottom: 10px; /* Add spacing between elements */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+    input[type="text"] {
+        width: 80%;
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+    label {
+        font-size: 14px;
+    }
+    select {
+        font-size: 14px;
+    }
+    .weather-info {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+    input[type="text"] {
+        width: 100%;
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+    label {
+        font-size: 14px;
+    }
+    select {
+        font-size: 14px;
+    }
+    .weather-info {
+        font-size: 18px;
+    }
+}
